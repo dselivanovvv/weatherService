@@ -15,7 +15,7 @@ app.conf.beat_schedule = {
     'get-hourly-weather-data': {
         'task': 'get_weather_data',
         'schedule': crontab(minute='0', hour='*'),
-        # 'schedule': crontab(minute='*/5', hour='*'),
+        # 'schedule': crontab(minute='*/5', hour='*'),  # for dev purpose
         'args': (WEATHER_CITY, OPENWEATHER_API_KEY, ),
     }
 }

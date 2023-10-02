@@ -6,6 +6,13 @@ from weather.models import WeatherData
 
 @shared_task(name='get_weather_data')
 def get_weather_data(city, api_key):
+    """
+    Celery task to get weather data
+    :param city: preferable city
+    :param api_key: openweather's provided token
+    :return: status of task
+    """
+
     url = f'https://api.openweathermap.org/data/2.5/weather?' \
           f'units=metric&' \
           f'appid={api_key}&' \

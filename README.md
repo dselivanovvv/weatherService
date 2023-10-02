@@ -6,7 +6,7 @@ This microservice is designed to fetch and store temperature data for a specifie
 
 ## Information
 
- Celery Beat is responsible for scheduling periodic tasks, such as fetching hourly temperature data.
+Celery Beat is responsible for scheduling periodic tasks, such as fetching hourly temperature data.
 
  
 Celery Worker processes the scheduled tasks and stores temperature data.
@@ -86,7 +86,7 @@ GET /api/v1/weather_data/?day=2023-10-02
 #### Get the historical temperature data for a specific day
 
 ```http
-  GET /api/v1/weather_data/
+GET /api/v1/weather_data/
 ```
 
 | Parameter | Type     | Description                |
