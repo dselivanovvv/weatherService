@@ -17,7 +17,7 @@ This addition emphasizes the importance of **Redis** as a message broker for Cel
 Clone the project
 
 ```bash
-  git clone https://link
+  git clone [https://link](https://github.com/dselivanovvv/weatherService.git)
 ```
 
 Go to the project directory
